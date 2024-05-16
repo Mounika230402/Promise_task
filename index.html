@@ -9,6 +9,7 @@
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: whitesmoke;
+            font-size:10px;
         }
     </style>
 </head>
@@ -133,9 +134,11 @@
                 let H1=document.createElement("p")
                 let Img=document.createElement("img")
                 let Description=document.createElement("p")
-                let Price=document.createElement("H3")
+                let Price=document.createElement("h3")
                 let Rating=document.createElement("h3")
                 H1.innerHTML=i.title
+                // H1.style.borderBottom="5px solid lightgreen"
+                H1.style.boxShadow="0px 9px 5px darkgreen"
                 Img.src=i.image
                 Description.innerHTML=i.description
                 Price.innerHTML="Price: ₹"+i.price
@@ -156,8 +159,8 @@
                 getDiv1.appendChild(Price)
                 getDiv1.appendChild(Rating)
                 document.body.appendChild(getDiv1)
-                getDiv1.style.width="460px";
-                getDiv1.style.height="650px";
+                getDiv1.style.width="400px";
+                getDiv1.style.height="400px";
                 getDiv1.style.backgroundColor="green";
                 getDiv1.style.border="2px solid transparent";
                 getDiv1.style.borderRadius="5%"
